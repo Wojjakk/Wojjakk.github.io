@@ -3,6 +3,7 @@
     font-family: 'Readex Pro', sans-serif;
     font-weight: 600;
     color: #aaa;
+    -webkit-user-drag: none;
 }
 
 body {
