@@ -4,6 +4,7 @@
     font-weight: 600;
     color: #aaa;
     -webkit-user-drag: none;
+    user-select: none;
 }
 
 body {
