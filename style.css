@@ -73,7 +73,7 @@ img#logo_big {
     height: 100px;
 }
 
-@media only screen and (max-width: 510+px) {
+@media only screen and (max-width: 510px) {
     nav, #first, footer {
       width: 100%;
     }
