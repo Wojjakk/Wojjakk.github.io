@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Readex+Pro&display=swap');
+
 * {
     margin: 0;
+    font-family: 'Oswald', sans-serif;
     font-family: 'Readex Pro', sans-serif;
-    font-weight: 600;
     color: #aaa;
 }
 
