@@ -40,14 +40,14 @@ function draw()
     //ctx.clearRect(0,0,canvas.width, canvas.height);
     for (let i = 0; i < clickX.length; i++) {
         ctx.beginPath();
-        ctx.arc(clickX[i], clickY[i], 1.2137, 0, Math.PI*2);
+        ctx.arc(clickX[i], clickY[i], 1.5, 0, Math.PI*2);
         ctx.fillStyle = colors[i];
         ctx.fill();
         ctx.closePath();
         clickX[i] += dx[i];
         clickY[i] += dy[i];
         lifetime[i]++;
-        if(lifetime[i] >= randomFloat(120,824)){
+        if(lifetime[i] >= randomFloat(60,360)){
             delete clickX[i];
             delete clickY[i];
             delete lifetime[i];
@@ -79,8 +79,8 @@ document.addEventListener("click", (e) =>{
     clickY.push(e.clientY);
     lifetime.push(0);
     let {x,y} = directionFromAngle(randomNumber(0,360));
-    dx.push(x * randomFloat(0.1,2));
-    dy.push(y * randomFloat(0.1,2));
+    dx.push(x * randomFloat(0.1,3));
+    dy.push(y * randomFloat(0.1,3));
     colors.push(Color.Random());
     // colors.push('#'+randomNumber(16,255).toString(16)+randomNumber(16,255).toString(16)+randomNumber(16,255).toString(16));
     }
